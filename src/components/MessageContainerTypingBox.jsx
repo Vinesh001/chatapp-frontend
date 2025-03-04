@@ -16,7 +16,7 @@ function MessageContainerTypingText(){
         // console.log(text)
         try{
             axios.defaults.withCredentials = true;
-            const res = await axios.post(`http://localhost:8080/api/v1/message/send/${selectedUser?._id}`, {message:text},{
+            const res = await axios.post(`http://chatapp-backend-dsrf.onrender.com/api/v1/message/send/${selectedUser?._id}`, {message:text},{
                 headers: {
                     'Content-Type': "application/json"
                 },

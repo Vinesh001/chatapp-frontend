@@ -10,7 +10,7 @@ const useGetOtherUsers = () => {
         const fetchOtherUsers = async () => {
             try {
                 axios.defaults.withCredentials = true;
-                const res = await axios.get(`http://localhost:8080/api/v1/user/otherusers`);
+                const res = await axios.get(`http://chatapp-backend-dsrf.onrender.com/api/v1/user/otherusers`);
                 // store
                 // console.log("other users -> ",res.data);
                 dispatch(setOtherUsers(res.data));
