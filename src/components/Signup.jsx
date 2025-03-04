@@ -24,7 +24,7 @@ function Signup() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const data = await axios.post("http://chatapp-backend-dsrf.onrender.com/api/v1/user/register", formData, {
+            const data = await axios.post("https://chatapp-backend-dsrf.onrender.com/api/v1/user/register", formData, {
                 headers: {
                     'Content-Type': 'application/json'
                 },

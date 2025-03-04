@@ -8,7 +8,7 @@ function Logout(){
     const navigate = useNavigate();
     const logoutHandler = async()=>{
         try{
-            await axios.post(`http://chatapp-backend-dsrf.onrender.com/api/v1/user/logout`,{
+            await axios.post(`https://chatapp-backend-dsrf.onrender.com/api/v1/user/logout`,{
                 headers: {
                     'Content-Type': "application/json"
                 },

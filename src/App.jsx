@@ -33,7 +33,7 @@ function App() {
 
   useEffect(()=>{
     if(authUser){
-      const socketio = io(`http://chatapp-backend-dsrf.onrender.com`, {
+      const socketio = io(`https://chatapp-backend-dsrf.onrender.com`, {
           query:{
             userId:authUser._id
           }

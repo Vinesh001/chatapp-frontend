@@ -15,7 +15,7 @@ function useGetMessages(){
             try{
                 console.log("getMessages")
                 axios.defaults.withCredentials = true;
-                const res = await axios.get(`http://chatapp-backend-dsrf.onrender.com/api/v1/message/${selectedUser?._id}`,{
+                const res = await axios.get(`https://chatapp-backend-dsrf.onrender.com/api/v1/message/${selectedUser?._id}`,{
                     headers: {
                         'Content-Type': "application/json"
                     },

@@ -10,7 +10,7 @@ const useGetAuthUser = () => {
         const fetchUserData = async () => {
             try {
                 axios.defaults.withCredentials = true;
-                const res = await axios.get(`http://chatapp-backend-dsrf.onrender.com/api/v1/user`);
+                const res = await axios.get(`https://chatapp-backend-dsrf.onrender.com/api/v1/user`);
 
                 // console.log("authuser", res.data)
                 dispatch(setAuthUser(res.data[0]));
